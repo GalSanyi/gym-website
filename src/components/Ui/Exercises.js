@@ -27,9 +27,31 @@ const Exercises = () => {
               <h4>Healthy Life</h4>
               <p>
                 Sunt id incididunt ullamco mollit aute pariatur est enim
-                adipisicing consequat. Fugiat consectetur veniam elit ullamco
-                tempor aute culpa excepteur enim eiusmod laborum. Velit enim ut
-                amet culpa et laboris. Nulla et dolore sint voluptate.
+                adipisicing consequat.
+              </p>
+            </div>
+          </div>
+          <div className="exercise__item">
+            <span className="exercise__icon">
+              <img src={Yoga} alt="" />
+            </span>
+            <div className="exercise__content">
+              <h4>increased flexibility</h4>
+              <p>
+                Sunt id incididunt ullamco mollit aute pariatur est enim
+                adipisicing consequat.
+              </p>
+            </div>
+          </div>
+          <div className="exercise__item">
+            <span className="exercise__icon">
+              <img src={Extended} alt="" />
+            </span>
+            <div className="exercise__content">
+              <h4>Reducing Blood Pressure</h4>
+              <p>
+                Sunt id incididunt ullamco mollit aute pariatur est enim
+                adipisicing consequat.
               </p>
             </div>
           </div>

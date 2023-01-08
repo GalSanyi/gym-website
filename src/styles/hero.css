@@ -20,6 +20,7 @@
   color: var(--heading-color);
   margin-bottom: 50px;
   line-height: 30px;
+  width: 60%;
 }
 .hero__btns {
   display: flex;
