@@ -17,9 +17,11 @@ const Hero = () => {
               <span className="highlights"> Healthy</span> lifestyle
             </h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              Fugiat eu amet eiusmod deserunt mollit laborum. Ipsum cillum
+              pariatur nulla proident elit nostrud ipsum sunt non ad id irure.
              
+              Labore enim nulla quis laboris do ad aliqua minim sit dolor ea
+              aliqua deserunt ex.
             </p>
 
             <div className="hero__btns">
@@ -58,7 +60,10 @@ const Hero = () => {
                 <span>
                   <HiLocationMarker />
                 </span>
-                <h5>Find a new<br/> gym near you</h5>
+                <h5>
+                  Find a new
+                  <br /> gym near you
+                </h5>
               </div>
               <div className="dumble__icon">
                 <img src={dumpleIcon} alt="" />
