@@ -12,6 +12,7 @@ const Testimonials = () => {
   return (
     <section>
       <div className="container sliders">
+        <h2 className="section__title">Testimonials</h2>
         <Swiper
           effect={'cards'}
           grabCursor={true}
@@ -20,38 +21,21 @@ const Testimonials = () => {
         >
           <SwiperSlide>
             <div className="slider__item">
-              <div className="slider__img">
+              <div className="slider__img-01">
                 <img src={Avatar01} alt="" />
               </div>
               <h4>Jesica Fernandes</h4>
               <p>
                 Eu labore id veniam dolor magna do tempor laborum fugiat
                 consequat reprehenderit. Consequat do ut nulla culpa proident
-                laborum et sunt consectetur do eiusmod officia voluptate. Esse
-                ipsum eu non voluptate aute. Irure minim adipisicing voluptate
-                sit ipsum.
+                laborum et sunt consectetur do eiusmod officia voluptate.
               </p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="slider__item">
-              <div className="slider__img">
+              <div className="slider__img-02">
                 <img src={Avatar02} alt="" />
-              </div>
-              <h4>Jesica Fernandes</h4>
-              <p>
-                Eu labore id veniam dolor magna do tempor laborum fugiat
-                consequat reprehenderit. Consequat do ut nulla culpa proident
-                laborum et sunt consectetur do eiusmod officia voluptate. Esse
-                ipsum eu non voluptate aute. Irure minim adipisicing voluptate
-                sit ipsum.
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slider__item">
-              <div className="slider__img">
-                <img src={Avatar01} alt="" />
               </div>
               <h4>Jesica Fernandes</h4>
               <p>
