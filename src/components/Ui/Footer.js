@@ -24,14 +24,14 @@ const Footer = () => {
 
             <ul className="footer__links">
               <li>
-                <a href="#">Our program</a>
+                <a href="#Support">Our program</a>
               </li>
               <li>
-                <a href="#">Our plan</a>
+                <a href="#Support">Our plan</a>
               </li>
 
               <li>
-                <a href="#">Become a member</a>
+                <a href="#Support">Become a member</a>
               </li>
             </ul>
           </div>
