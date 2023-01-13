@@ -41,13 +41,13 @@ const Footer = () => {
 
             <ul className="footer__links">
               <li>
-                <a href="#">About us</a>
+                <a href="#About">About us</a>
               </li>
               <li>
-                <a href="#">Contact us</a>
+                <a href="#Contact">Contact us</a>
               </li>
               <li>
-                <a href="#">Support</a>
+                <a href="#Support">Support</a>
               </li>
             </ul>
           </div>
@@ -57,13 +57,13 @@ const Footer = () => {
 
             <ul className="footer__links">
               <li>
-                <a href="#">About us</a>
+                <a href="#Support">About us</a>
               </li>
               <li>
-                <a href="#">Contact us</a>
+                <a href="#Support">Contact us</a>
               </li>
               <li>
-                <a href="#">Support</a>
+                <a href="#Support">Support</a>
               </li>
             </ul>
           </div>
