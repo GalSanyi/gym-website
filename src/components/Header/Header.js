@@ -1,31 +1,54 @@
-import React from 'react';
 import '../../styles/header.css';
 import logo from '../../assets/img/dumble.png';
-import {BsList} from 'react-icons/bs';
-
+import { BsList } from 'react-icons/bs';
+import { useRef, useEffect } from 'react';
 
 import { v4 as uuidv4 } from 'uuid';
 const nav__link = [
   {
-    path: '#',
+    path: '#home',
     display: 'Home',
   },
   {
-    path: '#',
-    display: 'schedule',
+    path: '#schedule',
+    display: 'Schedule',
   },
   {
-    path: '#',
+    path: '#classes',
     display: 'Classes',
   },
   {
-    path: '#',
+    path: '#pricing-plan',
     display: 'Pricing',
   },
 ];
 const Header = () => {
+  const ref = useRef(false);
+  const headerFunc = () => {
+    if (
+      document.body.scrollTop > 80 ||
+      document.documentElement.scrollTop > 80
+    ) {
+      ref.current.classList.add('sticky__header');
+    } else {
+      ref.current.classList.remove('sticky__header');
+    }
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', headerFunc);
+    return () => window.removeEventListener('scroll', headerFunc);
+  }, []);
+  const handleClick = e => {
+    e.preventDefault();
+    const targetAttr = e.target.getAttribute('href');
+    const location = document.querySelector(targetAttr).offsetTop;
+    window.scroll({
+      left: 0,
+      top: location - 80,
+    });
+  };
   return (
-    <header className='header'>
+    <header className="header" ref={ref}>
       <div className="container">
         <div className="nav__wrapper">
           {/* logo */}
@@ -40,16 +63,20 @@ const Header = () => {
             <ul className="menu">
               {nav__link.map(item => (
                 <li key={uuidv4()} className="nav__item">
-                  <a href={item.path}>{item.display}</a>
+                  <a onClick={handleClick} href={item.path}>
+                    {item.display}
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
 
           {/* nav right */}
-          <div className='nav-right'>
-            <button className='register__btn'>Register</button>
-            <span className='mobile__menu'><BsList/></span>
+          <div className="nav-right">
+            <button className="register__btn">Register</button>
+            <span className="mobile__menu">
+              <BsList />
+            </span>
           </div>
         </div>
       </div>

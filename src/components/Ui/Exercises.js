@@ -5,7 +5,7 @@ import Extended from '../../assets/img/extended.png';
 
 const Exercises = () => {
   return (
-    <section>
+    <section id="schedule">
       <div className="container exercise__container">
         <div className="exercise__top">
           <h2 className="section__title">
@@ -19,7 +19,11 @@ const Exercises = () => {
         </div>
         {/* exercise list */}
         <div className="exercise__wrapper">
-          <div className="exercise__item">
+          <div
+            className="exercise__item"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <span className="exercise__icon">
               <img src={Lunges} alt="" />
             </span>
@@ -31,7 +35,11 @@ const Exercises = () => {
               </p>
             </div>
           </div>
-          <div className="exercise__item">
+          <div
+            className="exercise__item"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <span className="exercise__icon">
               <img src={Yoga} alt="" />
             </span>
@@ -43,7 +51,11 @@ const Exercises = () => {
               </p>
             </div>
           </div>
-          <div className="exercise__item">
+          <div
+            className="exercise__item"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <span className="exercise__icon">
               <img src={Extended} alt="" />
             </span>

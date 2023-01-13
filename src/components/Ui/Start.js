@@ -2,13 +2,22 @@ import '../../styles/start.css';
 import TrainerImg from '../../assets/img/trainer.png';
 const Start = () => {
   return (
-    <section>
+    <section id="classes">
       <div className="container">
         <div className="start__wrapper">
           <div className="start__img">
-            <img src={TrainerImg} alt="" />
+            <img
+              src={TrainerImg}
+              alt=""
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            />
           </div>
-          <div className="start__content">
+          <div
+            className="start__content"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <h2 className="section__title">
               Ready to make a <span className="highlights"> change</span>?
               <p>
